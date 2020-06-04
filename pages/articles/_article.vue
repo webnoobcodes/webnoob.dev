@@ -6,7 +6,7 @@
     <h1>{{ page.title }}</h1>
     <div class="author">
       <a :href="'https://twitter.com/'+page.author.twitter" target="_blank" rel="noopener noreferrer nofollow">
-        <img :src="'https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/'+page.author.twitter+'&w=60'" />
+        <img :src="'https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/'+page.author.twitter+'&w=120'" width="60px" />
         {{ page.author.name }}
       </a>
     </div>
@@ -33,7 +33,10 @@
       return {
         title: this.page.title,
         meta: [
-          { hid: 'description', name: 'description', content: this.page.description }
+          { hid: 'description', name: 'description', content: this.page.description },
+          { hid: 'og:title', content: this.page.title },
+          { hid: 'og:description', content: this.page.description },
+          { hid: 'og:type', content: 'article' },
         ]
       }
     },
