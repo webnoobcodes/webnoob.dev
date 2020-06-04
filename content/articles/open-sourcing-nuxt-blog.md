@@ -42,4 +42,4 @@ You can find the repository here, and if you want to contribute to the project, 
 
 If you want to use my project to code and build your own website, then go for it.
 
-[Open Github](https://github.com/webnoobcodes)
+[Open Github](https://github.com/webnoobcodes/webnoob.dev)

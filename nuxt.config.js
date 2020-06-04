@@ -29,7 +29,6 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/scroll-progress' },
     { src: '~/plugins/vue-resource' },
     { src: '~/plugins/font-awesome' },
     { src: '~/plugins/format-date' }
