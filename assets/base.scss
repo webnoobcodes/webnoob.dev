@@ -1,0 +1,67 @@
+@import 'fonts';
+@import 'theme-color';
+@import 'mixin';
+@import 'the-header';
+@import 'content';
+
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.base {
+  min-height: 100vh;
+  transition: background-color .2s linear;
+
+  @include themed() {
+    color: t('text');
+    background-color: t('bg');
+  }
+
+  .main-container {
+    width: 100vw;
+    max-width: 984px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+}
+
+#scroll-progress-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: .5em;
+  background: transparent;
+  z-index: 10;
+
+  .scroll-progress {
+    height: .5em;
+    
+    @include themed() {
+      background-color: t('code-bg');
+    }
+  }
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(1em);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .2s ease-in-out;
+}

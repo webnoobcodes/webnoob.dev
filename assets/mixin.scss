@@ -1,0 +1,7 @@
+@mixin header($fontsize: 3.6rem) {
+  font-family: 'Righteous', 'Inter', sans-serif;
+  font-size: $fontsize;
+  font-weight: normal;
+  line-height: 1.2em;
+  padding: 1em 0;
+}

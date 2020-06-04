@@ -1,0 +1,46 @@
+$themes: (
+  default: (
+    bg: #EFEFEF,
+    text: #222,
+    text-secondary: #888,
+    link: #333,
+    link-active: #009345,
+    link-hover: #fefefe,
+    link-hover-bg: #222,
+    code: #FEFEFE,
+    code-bg: #3BAA3B,
+    button-text: #EFEFEF,
+    button-bg: #333
+  ),
+  dark: (
+    bg: #111,
+    text: #DCDCDC,
+    text-secondary: #888,
+    link: #FEFEFE,
+    link-active: #009345,
+    link-hover: #222,
+    link-hover-bg: #FEFEFE,
+    code: #FEFEFE,
+    code-bg: #7300e6,
+    button-text: #EFEFEF,
+    button-bg: #333
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

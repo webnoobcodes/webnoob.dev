@@ -1,0 +1,182 @@
+.content {
+  padding: 1em 0;
+  font-size: 1.3rem;
+  line-height: 1.8em;
+
+  h1 { @include header(); }
+  h2 { @include header($fontsize: 2rem); }
+  h3 { @include header($fontsize: 1.6rem); }
+
+  p, ul, .article-list {
+    padding: 1em 0;
+
+    a {
+      text-decoration: none;
+      
+      @include themed() {
+        color: t('link');
+        border-bottom: 1px t('link') dashed;
+      }
+    }
+  }
+
+  .author {
+    padding: 0 0 2em 0;
+    width: fit-content;
+
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-decoration: none;
+
+      @include themed() {
+        color: t('link');
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: .5em;
+      padding: .1em;
+
+      @include themed() {
+        border: .1em solid t('link-active');
+      }
+    }
+  }
+}
+
+.article-back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  text-decoration: none;
+
+  @include themed() {
+    color: t('link');
+  }
+
+  svg { margin-right: .25em; }
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  .article {
+    padding: 0 1em 2em;
+  }
+
+  .article-date {
+    font-size: 1rem;
+    line-height: normal;
+
+    @include themed() {
+      color: t('text-secondary');
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: normal;
+    padding: 0;
+
+    @include themed() {
+      color: t('text-secondary');
+    }
+  }
+}
+
+.nuxt-content {
+  code {
+    font-family: 'Share Tech', 'Inter', sans-serif;
+  }
+
+  ul {
+    padding: 0 0 2em 1em;
+  }
+
+  p, ul {
+    code {
+      font-family: 'Share Tech', 'Inter', sans-serif;
+      padding: .05em .25em;
+      border-radius: .25em;
+  
+      @include themed() {
+        color: t('code');
+        background-color: t('code-bg');
+      }
+    }
+  }
+}
+
+.uses {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 0 1em;
+    }
+  
+    span {
+      font-family: 'Share Tech', 'Inter', sans-serif;
+      
+      @include themed() {
+        color: t('text-secondary');
+      }
+    }
+  }
+}
+
+#newsletter {
+  padding: 2em 0 0;
+  
+  @include themed() {
+    color: t('text');
+  }
+
+  form {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    input.email-signup {
+      display: block;
+      width: 100%;
+      padding: .5em;
+      font-size: 1.3rem;
+      border-top-left-radius: .25em;
+      border-bottom-left-radius: .25em;
+      border: 1px solid #333;
+      background: #fff;
+    }
+
+    .button {
+      border-radius: 0;
+      border-top-right-radius: .25em;
+      border-bottom-right-radius: .25em;
+      padding: .5em;
+      font-size: 1.3rem;
+      cursor: pointer;
+
+      @include themed() {
+        color: t('button-text');
+        background-color: t('button-bg');
+      }
+    }
+  }  
+
+  .statustext {
+    width: 100%;
+    padding: .5em 0;
+    font-size: 1.3rem;
+    
+    @include themed() {
+      color: t('text');
+    }
+  }     
+}

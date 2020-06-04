@@ -1,0 +1,51 @@
+#the-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 1em 0;
+
+  nav {
+    font-size: .85rem;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0 1em;
+  
+      li {
+        margin-right: .5em;
+  
+        a {
+          display: block;
+          padding: .5em;
+          text-decoration: none;
+          border-radius: .25em;
+
+          @include themed() {
+            color: t('link');
+          }
+  
+          &.nuxt-link-exact-active {
+            @include themed() {
+              color: t('link-active');
+            }
+          }
+  
+          &:hover {
+            @include themed() {
+              color: t('link-hover');
+              background-color: t('link-hover-bg');
+            }
+          }          
+        }
+      }
+    }
+  }
+
+  .theme-toggle {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+}
