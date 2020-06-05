@@ -49,7 +49,7 @@ export default {
   ],
   pwa: {
     manifest: {
-      name: "webnoob.dev - Vue.js and other related stuff",
+      name: "webnoob, Vue.js and other related stuff",
       short_name: "webnoob",
       start_url: "/index.html",
       display: "standalone",

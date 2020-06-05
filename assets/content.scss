@@ -92,7 +92,8 @@
 
 .nuxt-content {
   code {
-    font-family: 'Share Tech', 'Inter', sans-serif;
+    font-size: 1rem;
+    font-family: monospace, sans-serif;
   }
 
   ul {
@@ -101,6 +102,7 @@
 
   p, ul {
     code {
+      font-size: 1.3rem;
       font-family: 'Share Tech', 'Inter', sans-serif;
       padding: .05em .25em;
       border-radius: .25em;

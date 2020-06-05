@@ -42,13 +42,16 @@
       }
     },
     mounted() {
-      this.darkTheme = JSON.parse(localStorage.getItem("darkTheme"));
-      window.addEventListener("scroll", this.scrollPosition);
-    },
-    created() {
-      if(!process.server && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        this.darkTheme = true;
+      if(localStorage.getItem("darkTheme") === null) {
+        if(window.matchMedia("(prefers-color-scheme: dark)").matches)
+        {
+          this.darkTheme = true;
+        }
       }
+      else {
+        this.darkTheme = JSON.parse(localStorage.getItem("darkTheme"));
+      }
+      window.addEventListener("scroll", this.scrollPosition);      
     },
     beforeDestroy() {
       window.removeEventListener("scroll", this.scrollPosition);

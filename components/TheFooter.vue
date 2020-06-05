@@ -8,25 +8,15 @@
   </footer>
 </template>
 
-<script>
-  export default {
-    data: () => {
-      return {
-        
-      }
-    }
-  }
-</script>
-
 <style lang="scss" scoped>
   #the-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1em 0;
+    padding: 1em 0 3em;
     font-size: .8rem;
 
-    svg, img { margin: 0 .25em; }
+    svg, img { margin: 0 .5em; }
   }
 </style>
