@@ -50,8 +50,12 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'https://www.webnoob.dev',
+  },
   pwa: {
     manifest: {
       name: "webnoob, Vue.js and other related stuff",
