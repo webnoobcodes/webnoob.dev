@@ -23,9 +23,12 @@
     },
     head () {
       return {
-        title: 'webnoob.dev',
+        title: 'webnoob',
         meta: [
-          { hid: 'description', name: 'description', content: 'Webnoob, Vue.js and other related stuff' }
+          { hid: 'description', name: 'description', content: 'Webnoob, Vue.js and other related stuff' },
+          { hid: 'og:title', name: 'og:title', content: 'webnoob' },
+          { hid: 'og:description', name: 'og:description', content: 'Webnoob, Vue.js and other related stuff' },
+          { hid: 'og:type', name: 'og:type', content: 'blog' },
         ]
       }
     },

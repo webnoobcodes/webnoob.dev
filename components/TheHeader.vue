@@ -1,7 +1,7 @@
 <template>
   <header id="the-header">
     <div class="logo">
-      <nuxt-link to="/"><img :src="require('~/assets/webnoob-120x120.png')" width="60px" alt=""></nuxt-link>
+      <nuxt-link to="/"><img :src="require('~/assets/webnoob-120x120.png')" width="60px" alt="webnoob"></nuxt-link>
     </div>
     <nav>
       <ul>

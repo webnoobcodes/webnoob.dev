@@ -6,7 +6,7 @@
     <h1>{{ page.title }}</h1>
     <div class="author">
       <a :href="'https://twitter.com/'+page.author.twitter" target="_blank" rel="noopener noreferrer nofollow">
-        <img :src="'https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/'+page.author.twitter+'&w=120'" width="60px" />
+        <img :src="'https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/'+page.author.twitter+'&w=120'" width="60px" :alt="page.author.twitter" />
         {{ page.author.name }}
       </a>
     </div>
@@ -30,15 +30,22 @@
       }
     },
     head () {
-      return {
+      let data = {
         title: this.page.title,
         meta: [
           { hid: 'description', name: 'description', content: this.page.description },
-          { hid: 'og:title', content: this.page.title },
-          { hid: 'og:description', content: this.page.description },
-          { hid: 'og:type', content: 'article' },
+          { hid: 'og:title', name: 'og:title', content: this.page.title },
+          { hid: 'og:description', name: 'og:description', content: this.page.description },
+          { hid: 'og:type', name: 'og:type', content: 'article' },
         ]
       }
+
+      if(this.page.image) {
+        data.meta.push({ hid: 'og:image', property: 'og:image', content: 'https://www.webnoob.dev/img/og/'+this.page.image })
+        data.meta.push({ hid: 'twitter:image', name: 'twitter:image', content: 'https://www.webnoob.dev/img/og/'+this.page.image })
+      }
+
+      return data;
     },
     transition: {
       name: 'fade',

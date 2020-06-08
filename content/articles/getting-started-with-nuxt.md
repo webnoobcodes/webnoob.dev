@@ -2,6 +2,7 @@
 title: Getting started with Nuxt.js
 date: "2020-06-05"
 description: "This tutorial is all about, what Nuxt.js in detail is, which features you are getting, and how you can create your first project"
+image: "getting-started-with-nuxt.jpg"
 author: 
   twitter: "webnoobcodes"
   name: "Mario Laurich"
@@ -89,7 +90,7 @@ npm run dev
 
 If you look in your new directory structure for the first time, you will immediately notice that you can find a lot of new stuff. For comparison, a regular Vue project looks more comfortable at first. But all of this is justified because there are also some beneficial new patterns with all that stuff.
 
-First, you have the assets folder. It's entirely the same as with Vue. You can store here all your static assets, your images, for example. But also uncompiled SCSS files, which you are using in the whole application. Also, the components directory sounds familiar. The name suggests, here is the place for all your components. For all? Not entirely. You have here only all the reusable components that you can use in your whole application. Components for the layout and pages have their own directories 
+First, you have the assets folder. It's entirely the same as with Vue. You can store here all your static assets, your images, for example. But also uncompiled SCSS files, which you are using in the whole application. Also, the components directory sounds familiar. The name suggests, here is the place for all your components. For all? Not entirely. You have here only all the reusable components that you can use in your whole application. Components for the layout and pages have their own directories.
 
 In the layouts folder is already a `default.vue` file with a template and some CSS definitions. New is the `<nuxt />` tag
 
@@ -147,7 +148,7 @@ export default {
 
 The **plugins folder** is the place where you can set up additional libraries like font-awesome, for example. But you can also create your reusable pieces of JavaScript code. Register components globally and to inject functions or constants could also be a possibility.
 
-As an example, you can set up a new filter for displaying a date. If you register this plugin in your `nuxt.config.js` file, then you can use it easily in you templates with `{{ date | formatdate }}`.
+As an example, you can set up a new filter for displaying a date. If you register this plugin in your `nuxt.config.js` file, then you can use it easily in your templates with `{{ date | formatdate }}`.
 
 ```javascript
 import Vue from "vue";

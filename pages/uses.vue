@@ -77,7 +77,10 @@
       return {
         title: 'What I use',
         meta: [
-          { hid: 'description', name: 'description', content: 'A little list about what I use for my daily work, side projects, and for my YouTube videos' }
+          { hid: 'description', name: 'description', content: 'A little list about what I use for my daily work, side projects, and for my YouTube videos' },
+          { hid: 'og:title', name: 'og:title', content: 'webnoob - What I use' },
+          { hid: 'og:description', name: 'og:description', content: 'A little list about what I use for my daily work, side projects, and for my YouTube videos' },
+          { hid: 'og:type', name: 'og:type', content: 'blog' },
         ]
       }
     },

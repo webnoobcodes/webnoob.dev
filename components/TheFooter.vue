@@ -4,7 +4,7 @@
     with
     <fa-icon :icon="['fad', 'heart']" />
     by Mario Laurich ©2020,
-    built with <img :src="require('~/assets/nuxt.svg')" width="20px" />
+    built with <img :src="require('~/assets/nuxt.svg')" width="20px" alt="Nuxt.js" />
   </footer>
 </template>
 

@@ -9,7 +9,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@webnoobcodes' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@webnoobcodes' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'og:image', property: 'og:image', content: 'https://www.webnoob.dev/img/og/default.jpg' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.webnoob.dev/img/og/default.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }

@@ -31,7 +31,10 @@
       return {
         title: 'Who is webnoob?',
         meta: [
-          { hid: 'description', name: 'description', content: 'Some information about me and how I started my journey in web development' }
+          { hid: 'description', name: 'description', content: 'Some information about me and how I started my journey in web development' },
+          { hid: 'og:title', name: 'og:title', content: 'webnoob - Who is webnoob?' },
+          { hid: 'og:description', name: 'og:description', content: 'Some information about me and how I started my journey in web development' },
+          { hid: 'og:type',  name: 'og:type', content: 'blog' },
         ]
       }
     },
