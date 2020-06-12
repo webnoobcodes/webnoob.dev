@@ -5,7 +5,7 @@
     </div>    
     <div class="base">
       <div class="main-container">
-        <TheHeader :theme="darkTheme" @changeTheme="toogleTheme" />
+        <TheHeader :theme="darkTheme" @changeTheme="toggleTheme" />
         <nuxt />
         <TheFooter />
       </div>
@@ -27,7 +27,7 @@
       }
     },
     methods: {
-      toogleTheme() {
+      toggleTheme() {
         this.darkTheme = !this.darkTheme;
       },
       scrollPosition() {

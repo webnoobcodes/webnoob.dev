@@ -74,6 +74,11 @@ export default {
     }
   },
   generate: {
+    // subfolders would create redirects on netlify
+    subFolders: false,
+    // generates a 404 page
+    fallback: true,
+    // site generation for all articles
     async routes () {
       const { $content } = require('@nuxt/content')
       const files = await $content('articles').fetch()

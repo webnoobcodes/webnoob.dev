@@ -6,7 +6,7 @@
     <h1>{{ page.title }}</h1>
     <div class="author">
       <a :href="'https://twitter.com/'+page.author.twitter" target="_blank" rel="noopener noreferrer nofollow">
-        <img :src="'https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/'+page.author.twitter+'&w=120'" width="60px" :alt="page.author.twitter" />
+        <img :src="'https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/'+page.author.twitter+'&w=120'" width="60px" height="60px" :alt="page.author.twitter" />
         {{ page.author.name }}
       </a>
     </div>

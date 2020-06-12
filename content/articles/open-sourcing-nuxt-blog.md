@@ -1,5 +1,5 @@
 ---
-title: I'm open sourcing my Nuxt.js blog
+title: "I'm open sourcing my Nuxt.js blog"
 date: "2020-06-04"
 description: "My new blog I've built and deployed on Netlify"
 author: 

@@ -1,5 +1,5 @@
 ---
-title: Getting started with Nuxt.js
+title: "Getting started with Nuxt.js"
 date: "2020-06-05"
 description: "This tutorial is all about, what Nuxt.js in detail is, which features you are getting, and how you can create your first project"
 image: "getting-started-with-nuxt.jpg"
