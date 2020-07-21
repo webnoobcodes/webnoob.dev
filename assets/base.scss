@@ -33,7 +33,7 @@ html {
   }
 
   .main-container {
-    width: 100vw;
+    width: calc(100vw - 2em);
     max-width: 984px;
     margin: 0 auto;
     padding: 0 1em;
