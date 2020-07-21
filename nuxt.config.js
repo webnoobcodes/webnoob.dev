@@ -19,6 +19,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ],
+    script: [
+      { src: 'https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js', 'data-name': 'BMC-Widget', 'data-id': 'webnoob', 'data-description': '', 'data-message': 'Did I help you in any way? You can now buy me a coffee!', 'data-color': '#009345', 'data-position': 'right', 'data-x_margin': 18, 'data-y_margin': 18}
+    ]
   },
   /*
   ** Customize the progress-bar color
@@ -65,6 +68,20 @@ export default {
       background_color: "#fefefe",
       theme_color: "#247000"
     },
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: 'https://cdnjs.buymeacoffee.com/*',
+          handler: 'cacheFirst',
+          method: 'GET'
+        },
+        {
+          urlPattern: 'https://images.weserv.nl/*',
+          handler: 'cacheFirst',
+          method: 'GET'
+        }
+      ]
+    }
   },
   content: {
     markdown: {
