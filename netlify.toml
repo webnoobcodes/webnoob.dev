@@ -5,3 +5,15 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+[[headers]]
+  for = "/_nuxt/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/_nuxt/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/_nuxt/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
