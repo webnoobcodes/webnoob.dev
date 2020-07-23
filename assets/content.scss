@@ -69,6 +69,7 @@
 
   .article {
     padding: 0 1em 2em;
+    @media (max-width: 768px) { padding: 0 0 2em; }
   }
 
   .article-date {
