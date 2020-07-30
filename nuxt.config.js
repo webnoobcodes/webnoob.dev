@@ -54,6 +54,7 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxt/content',
+    '@nuxtjs/feed',
     '@nuxtjs/sitemap'
   ],
   sitemap: {
@@ -91,6 +92,43 @@ export default {
     },
     liveEdit: false
   },
+  feed: [
+    {
+      path: '/feed.xml', // The route to your feed.
+      async create(feed) {
+        feed.options = {
+          title: 'webnoob.dev',
+          link: 'https://webnoob.dev/feed.xml',
+          description: 'Tutorials, courses, and articles about Vue.js and other related stuff. And some plain good old advice.'
+        }
+        
+        const { $content } = require('@nuxt/content')
+        const articles = await $content('articles').sortBy('date', 'desc').fetch()
+
+        articles.forEach((article) => {
+          const url = `https://webnoob.dev/articles/${article.slug}`
+
+          feed.addItem({
+            title: article.title,
+            id: url,
+            link: url,
+            date: new Date(article.date),
+            description: article.description,
+            content: article.description,
+            author: article.author.name,
+          })
+
+          feed.addContributor({
+            name: 'Mario Laurich',
+            email: 'webnoobcodes@gmail.com',
+            link: 'https://webnoob.dev/'
+          })
+        })
+      },
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+    }    
+  ],
   generate: {
     // subfolders would create redirects on netlify
     subFolders: false,
