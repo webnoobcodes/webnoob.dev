@@ -1,9 +1,9 @@
 <template>
   <div id="newsletter">
     <h3>Get notified</h3>
-    <p>New tutorials, courses, and articles straight into your inbox. Your email address will never be shared.</p>
-    <form @submit.prevent>
-      <input class="email-signup" type="email" v-model="email" placeholder="Enter Email" @keyup.enter="signup">
+    <label for="email">New tutorials, courses, and articles straight into your inbox. Your email address will never be shared.</label>
+    <form @submit.prevent>      
+      <input class="email-signup" id="email" type="email" v-model="email" placeholder="Enter Email" @keyup.enter="signup">
       <div class="button" @click="signup">GO!</div>
     </form>
     <div class="statustext">{{ statustext }}</div>   

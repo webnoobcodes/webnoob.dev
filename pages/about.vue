@@ -19,7 +19,7 @@
 
     <h2>Let's connect</h2>
     <p>
-      Follow me on <a href="https://youtube.com/webnoob" target="_blank">YouTube</a> and <a href="https://twitter.com/webnoobcodes"  target="_blank">Twitter</a>. That's where I usually hang out. The other platforms is a nice to have if you are a real webnoob fan ;)
+      Follow me on <a href="https://youtube.com/webnoob" rel="noreferrer" target="_blank">YouTube</a> and <a href="https://twitter.com/webnoobcodes" rel="noreferrer" target="_blank">Twitter</a>. That's where I usually hang out. The other platforms is a nice to have if you are a real webnoob fan ;)
     </p>
     <SocialMedia />
   </div>

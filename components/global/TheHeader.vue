@@ -1,7 +1,9 @@
 <template>
   <header id="the-header">
     <div class="logo">
-      <nuxt-link to="/"><img :src="require('~/assets/webnoob-120x120.png')" width="60px" alt="webnoob"></nuxt-link>
+      <nuxt-link to="/">
+        <img :src="require('~/assets/webnoob-60x60.png')" :srcset="require('~/assets/webnoob-60x60.png')+' 1x, '+require('~/assets/webnoob-120x120.png')+' 2x'" alt="webnoob">
+      </nuxt-link>
     </div>
     <nav>
       <ul>

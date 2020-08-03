@@ -4,7 +4,7 @@
     <div class="article-list">
       <div class="article" v-for="(article, index) in articles" :key="'article'+index">
         <div class="article-date">{{ article.date | formatdate }}</div>
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
+        <h2><nuxt-link :to="article.path">{{ article.title }}</nuxt-link></h2>
         <p>{{ article.description }}</p>
       </div>
     </div>

@@ -17,6 +17,14 @@
         color: t('link');
         border-bottom: 1px t('link') dashed;
       }
+    }    
+  }
+
+  .article-list {
+    h2 {
+      margin: 0; padding: .3em 0;
+      font-family: Inter, sans-serif;
+      font-size: 1.3rem;      
     }
   }
 
@@ -141,6 +149,11 @@
   
   @include themed() {
     color: t('text');
+  }
+
+  label {
+    display: block;
+    padding-bottom: 1em;
   }
 
   form {

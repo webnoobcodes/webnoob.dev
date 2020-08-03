@@ -21,3 +21,7 @@
   for = "/_nuxt/pages/*.js"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/_nuxt/commons/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
