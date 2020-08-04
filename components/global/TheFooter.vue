@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1em 0 6em;
+    padding: 1em 0;
     font-size: .8rem;
 
     svg, img { margin: 0 .5em; }

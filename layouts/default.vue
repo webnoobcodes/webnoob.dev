@@ -8,6 +8,9 @@
         <TheHeader :theme="darkTheme" @changeTheme="toggleTheme" />
         <nuxt />
         <TheFooter />
+        <div class="bottom-links">
+          <nuxt-link to="/legal-notice">legal notice</nuxt-link>
+        </div>        
       </div>
     </div>    
   </div>  

@@ -38,6 +38,19 @@ html {
     margin: 0 auto;
     padding: 0 .5em;
   }
+
+  .bottom-links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6em;
+
+    a {
+      @include themed() {
+        color: t('text');
+        background-color: t('bg');
+      }
+    }
+  }
 }
 
 #scroll-progress-container {
