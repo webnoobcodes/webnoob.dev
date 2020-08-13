@@ -15,7 +15,6 @@
           { title: 'YouTube', icon: 'youtube', color: '#e34f26', link: 'https://www.youtube.com/webnoob' },
           { title: 'Twitter', icon: 'twitter', color: '#0099e5', link: 'https://www.twitter.com/webnoobcodes' },
           { title: 'Instagram', icon: 'instagram', color: '#833AB4', link: 'https://www.instagram.com/webnoobcodes' },
-          { title: 'Patreon', icon: 'patreon', color: '#f96854', link: 'https://www.patreon.com/webnoob' },
           { title: 'Github', icon: 'git-alt', color: '#fc6d26', link: 'https://www.github.com/webnoobcodes' },
           { title: 'LinkedIn', icon: 'linkedin', color: '#2867B2', link: 'https://www.linkedin.com/in/mario-laurich/' },
         ]

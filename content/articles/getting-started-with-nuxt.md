@@ -224,4 +224,4 @@ To me, it all seems well organized and tidy.
 Now it's your turn. Create your first Nuxt project today and play around with the new possibilities.
 And if you want to see more, I already have a video tutorial about how you can create distinct layouts for mobile and desktop.
 
-👉 [Nuxt JS - Distinct Layouts](https://youtu.be/fqGnxrWQUoY)
+👉 [Nuxt JS - Distinct Layouts](https://youtu.be/xh_OrVwgh4M)

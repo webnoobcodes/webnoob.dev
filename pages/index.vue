@@ -25,9 +25,9 @@
       return {
         title: 'webnoob',
         meta: [
-          { hid: 'description', name: 'description', content: 'Webnoob, Vue.js and other related stuff' },
+          { hid: 'description', name: 'description', content: 'Tutorials, courses, and articles about Vue.js and other related stuff. And some plain good old advice.' },
           { hid: 'og:title', name: 'og:title', content: 'webnoob' },
-          { hid: 'og:description', name: 'og:description', content: 'Webnoob, Vue.js and other related stuff' },
+          { hid: 'og:description', name: 'og:description', content: 'Tutorials, courses, and articles about Vue.js and other related stuff. And some plain good old advice.' },
           { hid: 'og:type', name: 'og:type', content: 'blog' },
         ]
       }
